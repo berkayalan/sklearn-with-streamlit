@@ -47,7 +47,7 @@ def parameter_changes(clf_name):
         K = st.sidebar.slider("K",1,15)
         params["K"]=K
     elif clf_name=="Logistic Regression":
-        penalty = st.sidebar.selectbox("penalty",("L1","L2","elasticnet","none"))
+        penalty = st.sidebar.selectbox("penalty",("l1","l2","elasticnet","none"))
         params["penalty"]=penalty
     elif clf_name=="XGBoost":
         learning_rate = st.sidebar.slider("learning_rate",0.01,10.0)
